@@ -171,18 +171,20 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
+            href="https://www.youtube.com/channel/UCJ1yPUD2vgxWJCAma5ndFqA"
             title="Uriipep Pep"
             thumbnail={thumbYouTube}
           >
             My YouTube channel
           </GridItem>
-          <GridItem
-            title="Sistemas Del Sol"
-            thumbnail={thumbSistemasDelSol}
-          >
-            A private project for a pharmaceutical distribution company
-          </GridItem>
+          <NextLink href="/works/sistemas-del-sol">
+            <GridItem
+                title="Sistemas Del Sol"
+                thumbnail={thumbSistemasDelSol}
+            >
+              A private project for a pharmaceutical distribution company
+            </GridItem>
+          </NextLink>
         </SimpleGrid>
 
         <Box align="center" my={4}>
